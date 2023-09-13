@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+
 <head>
     <title>Курносов</title>
 </head>
@@ -19,22 +20,21 @@
     <li><a href="../parent/page.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
     <li><a href="../../grandparent/page.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
     <li><a href="http://example.com">Контекстная ссылка в тексте абзаца</a></li>
-    <li><a href="http://external-site.com#fragment">Ссылка на фрагмент страницы стороннего сайта</a></li>
+    <li><a href="http://example.com#fragment">Ссылка на фрагмент страницы стороннего сайта</a></li>
     <li>
         <map name="image-map">
-            <area shape="rect" coords="0,0,100,100" href="url1">
-            <area shape="circle" coords="150,150,50" href="url2">
+            <area shape="rect" coords="0,0,100,100" href="url1" alt="rect">
+            <area shape="circle" coords="150,150,50" href="url2" alt="circle">
         </map>
         <img src="image.jpg" usemap="#image-map" alt="Image with link areas">
     </li>
     <li><a href="">Ссылка с пустым href</a></li>
     <li><a>Ссылка без href</a></li>
     <li><a href="#" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
-    <li><a href="#" meta name="robots" content="noindex">Запрещенная для индексации поисковиками</a></li>
+    <li><!-- noindex --><a href="#" >Запрещенная для индексации поисковиками</a><!-- noindex --></li>
     </ul>
     <section id="fragment">
-    <h1>Форма</h1>
-        <h1>Форма</h1>
+    Форма
         <form action="/" method="post">
             <label for="fio">ФИО:</label>
             <input type="text" id="fio" name="fio" required> <br>
