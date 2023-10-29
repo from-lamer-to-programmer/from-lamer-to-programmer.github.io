@@ -1,0 +1,157 @@
+
+
+.container{
+    width:100%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+
+}
+.list-mobile{
+    order: 1;
+}
+.table-mobile{
+    order: 2;
+}
+.form-mobile{
+    order: 3;
+}
+
+@media (max-width: 720px) {
+
+    .table-mobile{
+        order: 1;
+    }
+
+    .list-mobile{
+        order: 2;
+    }
+
+    .form-mobile{
+        order: 3;
+    }
+}
+
+BODY {
+    background: #c9d3bb; /* Цвет фона веб-страницы */
+    margin:0;
+    width:100%;
+}
+A {
+    color: #2e3131; /* Цвет ссылок */
+}
+A:visited {
+    color: #3f5037; /* Цвет посещенных ссылок */
+}
+A:active {
+    color: #ffff00; /* Цвет активных ссылок */
+}
+
+
+
+header{
+
+
+
+    background-color: #98c29f;
+
+}
+
+
+
+
+.logo{
+
+    position: relative;
+    border-radius: 100px; /* Радиус скругления */
+    border: 3px solid green; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+    width: 50px;
+    height: 50px;
+
+}
+
+.nav_text{
+    float: right;
+
+
+}
+
+.nav_link{
+    margin: 0 4px 0;
+}
+
+.name_site{
+
+    margin-left: 30px;
+}
+
+.content{
+    max-width: 600px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid green;
+
+}
+
+
+
+table {
+
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table{
+    order:1;
+    border-top:3px solid green;
+
+    margin-bottom: 20px;
+}
+th,
+td {
+    border: 2px solid #000000;
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+td.odd {
+    background-color: #9dc783;
+}
+
+td.even {
+    background-color: #5d6450;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.li{
+    margin-top: 10px;
+}
+
+.form{
+    border-top:3px solid green;
+
+}
+.footer{
+    margin-top: 20px;
+    min-height: 30px;
+    display: block;
+    width:100%;
+    background-color: #98c29f;
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+    border: 3px solid green;
+}
+.border-green{
+    border:3px solid green;
+}

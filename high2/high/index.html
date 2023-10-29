@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>antorrent</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css" />
+
+</head>
+
+<!-- по умолчанию body блочный элемент, занимает 100% ширины родительского элемента html и имеет небольшой отступ margin по краям -->
+<body>
+
+<header class="navbar navbar-expand-lg navbar-dark border-green">
+    <div class="container text-center">
+        <a class="navbar-brand link-light" href="#links">
+            <img
+                    src="dollogo.png"
+                    alt="Логотип"
+                    width="40"
+                    height="40"
+                    class="d-inline-block align-top img-fluid"
+            />
+            Antorrent
+        </a>
+
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button
+                        class="navbar-toggler active btn btn-outline-orange"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#links">Список гиперссылок</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#form">Форма</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#table">Таблица</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+<!-- этот блок будет ограничен по ширине и горизонтально выровнен по центру родительского элемента -->
+<div class="content">
+    <div class="list-mobile">
+    <h1 id="links">Список гиперссылок</h1>
+    <ul>
+        <li><a href="http://kubsu.ru">Главная страница КубГу</a></li>
+        <li><a href="https://kubsu.ru">Главная страница сайта КубГу протоколе https (абсолютная ссылка)</a></li>
+        <li><a href="#" id="photo"><img src="bucks.jpg" width="400px" height="200px" 20px alt="Ссылка-изображение"></a></li>
+        <li><a href="#">Сокращенная ссылка на внутреннюю страницу</a></li>
+        <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+        <li><a href="#photo">Ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="/page?param1=value1&amp;param2=value2&amp;param3=value3">Ссылка с тремя параметрами в URL</a></li>
+        <li><a href="/page?id=123">Ссылка с параметром id в URL</a></li>
+        <li><a href="page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="about/page.html">Относительная ссылка на страницу в каталоге about</a></li>
+        <li><a href="../high.html">Относительная ссылка на страницу в каталоге уровнем выше</a></li>
+        <li><a href="../../high2.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+        <li><strong>Контекстная</strong><a href="https://www.youtube.com/"> ссылка в тексте абзаца</a></li>
+        <li><a href="https://qna.habr.com/q/460438#:~:text=Адрес_страницы#id_элемента"> на фрагмент страницы стороннего сайта</a></li>
+        <li>
+            <map name="image-map">
+                <area shape="rect" coords="0,0,100,100" href="https://www.youtube.com/" alt="rect">
+                <area shape="circle" coords="150,150,50" href="https://www.youtube.com/" alt="circle">
+            </map>
+            <img src="bucks.jpg" usemap="#image-map" width="400px" height="200px" alt="Image with link areas">
+        </li>
+        <li><a href="">Пустая ссылка (href="")</a></li>
+        <li><a>Ссылка без href</a></li>
+        <li><a href="https://www.youtube.com/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+        <li><!-- noindex --><a href="https://www.youtube.com/" >Запрещенная для индексации поисковиками</a><!-- noindex --></li>
+
+
+    </ul>
+
+    <ol>
+        <li><a href="https://www.wikipedia.org/" title="Ссылка на wiki">Ссылка на wiki</a></li>
+        <li><a href="https://www.youtube.com" title="Ссылка на YouTube">YouTube</a></li>
+        <li><a href="https://www.wikipedia.org/" title="Ссылка на wiki опять">Ссылка на wiki опять</a></li>
+    </ol>
+    <a href="ftp://username:password@ftp.example.com/path/to/file" title="Ссылка на файл на FTP-сервере с авторизацией">FTP File</a>
+        </div>
+
+<div class="table table-mobile" id="table">
+    <h3>Таблица</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>Колонка 1</th>
+            <th>Колонка 2</th>
+            <th colspan="2">Колонки 3 и 4</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="2" class="even">Ячейка 1</td>
+            <td class="odd">Ячейка 2</td>
+            <td class="even">Ячейка 3</td>
+            <td class="odd">Ячейка 4</td>
+        </tr>
+        <tr>
+            <td colspan="2">Ячейка 5 и 6</td>
+            <td class="even">Ячейка 7</td>
+
+        </tr>
+        <tr>
+            <td class="odd">Ячейка 8</td>
+            <td class="even">Ячейка 9</td>
+            <td class="odd">Ячейка 10</td>
+            <td class="even">Ячейка 11</td>
+        </tr>
+        <tr>
+            <td class="odd">Ячейка 12</td>
+            <td class="even">Ячейка 13</td>
+            <td class="odd">Ячейка 14</td>
+            <td class="even">Ячейка 15</td>
+        </tr>
+        <tr>
+            <td class="odd">Ячейка 16</td>
+            <td class="even">Ячейка 17</td>
+            <td class="odd">Ячейка 18</td>
+            <td class="even">Ячейка 19</td>
+        </tr>
+        <tr>
+            <td class="odd">Ячейка 20</td>
+            <td class="even">Ячейка 21</td>
+            <td class="odd">Ячейка 22</td>
+            <td class="even">Ячейка 23</td>
+        </tr>
+        <tr>
+            <td colspan="2">Ячейка 24 и 25</td>
+
+            <td class="odd">Ячейка 26</td>
+            <td class="even">Ячейка 27</td>
+        </tr>
+
+
+
+        </tbody>
+    </table>
+</div>
+    <hr/>
+<div class="form form-mobile" id="form">
+    <form action="/" method="POST" id="form" class="row g-3 needs-validation">
+        <h3 id="form" class="text-center">Форма</h3>
+
+        <div class="col-auto">
+            <label for="validationCustom01" class="form-label"
+            >Фамилия Имя Отчество:</label
+            >
+            <input
+                    type="text"
+                    placeholder="ФИО"
+                    class="form-control rounded-pill"
+                    id="validationCustom01"
+                    value=""
+                    required=""
+            />
+            <div class="valid-feedback">Looks good!</div>
+        </div>
+
+        <div class="col-auto">
+            <label for="validationCustomUsername" class="form-label"
+            >Телефон:
+            </label>
+            <div class="input-group has-validation">
+                <input
+                        type="text"
+                        class="form-control rounded-pill"
+                        placeholder="Введите ваш номер"
+                        id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend"
+                        required=""
+                />
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+
+        <div class="col-auto">
+            <label for="validationCustomUsername" class="form-label"
+            >E-mail:
+            </label>
+            <div class="input-group has-validation">
+                <input
+                        type="text"
+                        class="form-control rounded-pill"
+                        placeholder="Введите ваш E-mail"
+                        id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend"
+                        required=""
+                />
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+
+        <div class="col-auto">
+            <label>
+                Дата рождения:<br />
+                <input
+                        name="field-date"
+                        class="form-control rounded-pill"
+                        placeholder="2004-07-14"
+                        type="date"
+                        required=""
+                />
+            </label>
+        </div>
+
+        <div class="col-auto">
+            <p>Выберите ваш пол:<br /></p>
+            <div class="form-check icheck-material-orange">
+                <input
+                        class="form-check-input"
+                        type="radio"
+                        id="someRadioId1"
+                        name="someGroupName"
+                        required=""
+                />
+                <label class="form-check-label" for="someRadioId1">Женский</label>
+            </div>
+            <div class="form-check icheck-material-orange">
+                <input
+                        class="form-check-input"
+                        type="radio"
+                        id="someRadioId2"
+                        name="someGroupName"
+                />
+                <label class="form-check-label" for="someRadioId2">Мужской</label>
+            </div>
+        </div>
+
+        <div class="col-auto">
+            <label for="validationCustom04" class="form-label"
+            >Любимый язык программирования</label
+            >
+            <select
+                    class="form-select rounded-pill"
+                    id="validationCustom04"
+                    required=""
+            >
+                <option selected="" disabled="" value="">Выберете</option>
+                <option value="Значение1">Pascal</option>
+                <option value="Значение2">C</option>
+                <option value="Значение3">C++</option>
+                <option value="Значение4">JavaScript</option>
+                <option value="Значение5">PHP</option>
+                <option value="Значение6">Python</option>
+                <option value="Значение7">Java</option>
+                <option value="Значение8">Haskel</option>
+                <option value="Значение9">Clojure</option>
+                <option value="Значение10">Prolog</option>
+                <option value="Значение11">Scala</option>
+            </select>
+            <div class="invalid-feedback"></div>
+        </div>
+        <div class="col-auto">
+            <label>
+                Биография:<br />
+                <textarea
+                        name="field-name-2"
+                        class="form-control rounded-pill"
+                        placeholder="Напишите свою биографию"
+                        required=""
+                ></textarea>
+            </label>
+        </div>
+        <div class="col-auto">
+            С контрактом:
+            <div class="form-check icheck-material-orange">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="invalidCheck"
+                        required=""
+                />
+                <label class="form-check-label" for="invalidCheck">
+                    Ознакомлен (а)
+                </label>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+
+        <div class="col-auto">
+            <button class="custom-btn btn-1">Сохранить</button>
+        </div>
+    </form>
+    </form>
+</div>
+</div>
+
+<footer>
+<div class="footer text-center">
+    © Курносов Антон
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>
