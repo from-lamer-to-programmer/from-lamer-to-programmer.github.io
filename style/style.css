@@ -1,0 +1,265 @@
+.container{
+    width:100%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+
+
+}
+.list-mobile{
+    order: 1;
+    padding-bottom: 5%;
+}
+.table-mobile{
+    order: 2;
+}
+.form-mobile{
+    order: 3;
+}
+
+@media (max-width: 720px) {
+
+    .table-mobile{
+        order: 1;
+    }
+
+    .list-mobile{
+        order: 2;
+    }
+
+    .form-mobile{
+        order: 3;
+    }
+}
+
+body {
+
+
+background-image: url("../mmm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+A {
+    color: #2e3131; /* Цвет ссылок */
+}
+A:visited {
+    color: #3f5037; /* Цвет посещенных ссылок */
+}
+A:active {
+    color: #ffff00; /* Цвет активных ссылок */
+}
+
+
+
+header{
+
+
+
+    background-color: rgba(46,139,87,0.9);
+
+}
+
+
+
+
+.logo{
+
+    position: relative;
+    border-radius: 100px; /* Радиус скругления */
+    border: 3px solid rgba(46,139,87,0.5);
+    box-shadow: 0 0 5px 5px rgba(46,139,87,0.5);
+
+    width: 50px;
+    height: 50px;
+
+}
+
+.nav_text{
+    float: right;
+
+
+}
+
+.nav_link{
+    margin: 0 4px 0;
+}
+
+.name_site{
+
+    margin-left: 30px;
+}
+
+.content{
+    max-width: 800px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border: 3px solid rgba(46,139,87,0.5);
+    box-shadow: 0 0 10px 15px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background-color: rgba(46,170,87,0.9);
+
+
+}
+
+
+
+table {
+
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table{
+    order:1;
+    border: 3px solid rgba(46,139,87,0.5);
+    box-shadow: 0 0 10px 15px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    padding-bottom: 5%;
+    padding-top: 3%;
+
+}
+th,
+td {
+    border: 2px solid #000000;
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+td.odd {
+    background-color: #9dc783;
+}
+
+td.even {
+    background-color: #5d6450;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.li{
+    margin-top: 10px;
+
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+    margin: 0 auto; /* Центрирование по горизонтали */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer{
+    margin-top: 20px;
+    min-height: 50px;
+    display: block;
+    width:100%;
+    background-color: rgba(46,139,87,0.9);
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+    border: 3px solid rgba(46,139,87,0.5);
+    box-shadow: 0 0 10px 15px rgba(0,0,0,0.5);
+}
+.border-green{
+    border: 3px solid rgba(46,139,87,0.5);
+    box-shadow: 0 0 10px 15px rgba(0,0,0,0.5);
+}
+
+
+
+#kalk1{
+    max-width: 800px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border: 3px solid rgba(46,139,87,0.5);
+    box-shadow: 0 0 10px 15px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background-color: rgba(46,170,87,0.9);
+}
+
+#kalk2{
+    max-width: 800px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border: 3px solid rgba(46,139,87,0.5);
+    box-shadow: 0 0 10px 15px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background-color: rgba(46,170,87,0.9);
+}
+
+@media screen and (min-width: 720px) {
+    div.wrap.lh-lg.font-monospace {
+        order: 2;
+        padding: 50px;
+        margin: 70px 450px;
+        width: 800px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 100px rgb(255, 255, 255);
+    }
+
+    div.wrap1.lh-lg.font-monospace {
+        order: 1;
+        padding: 50px;
+        margin: 70px 450px;
+        width: 800px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 100px rgb(255, 255, 255);
+    }
+
+    div.wrap2.lh-lg.font-monospace {
+        order: -1;
+        padding: 50px;
+        margin: 70px 50px;
+        width: 800px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 100px rgb(255, 255, 255);
+    }
+
+    div.wrap3.lh-lg.font-monospace {
+
+        padding: 50px;
+        margin: 70px 450px;
+        width: 800px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 100px rgb(255, 255, 255);
+    }
+
+    div.wrap4.lh-lg.font-monospace {
+
+        padding: 50px;
+        margin: 70px 450px;
+        width: 800px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 100px rgb(255, 255, 255);
+    }
+}
