@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>antorrent</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css" />
     <script src="js.js"></script>
@@ -68,7 +69,7 @@
     <ul class="kubiklinks">
         <li><a href="http://kubsu.ru">Главная страница КубГу</a></li>
         <li><a href="https://kubsu.ru">Главная страница сайта КубГу протоколе https (абсолютная ссылка)</a></li>
-        <li><a href="#" id="photo"><img src="bucks.jpg" width="400px" height="200px" 20px alt="Ссылка-изображение"></a></li>
+        <li><a href="#" id="photo"><img src="bucks.jpg" width="300px" height="150px" 20px alt="Ссылка-изображение"></a></li>
         <li><a href="#">Сокращенная ссылка на внутреннюю страницу</a></li>
         <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
         <li><a href="#photo">Ссылка на фрагмент текущей страницы</a></li>
@@ -85,7 +86,7 @@
                 <area shape="rect" coords="0,0,100,100" href="https://www.youtube.com/" alt="rect">
                 <area shape="circle" coords="150,150,50" href="https://www.youtube.com/" alt="circle">
             </map>
-            <img src="bucks.jpg" usemap="#image-map" width="400px" height="200px" alt="Image with link areas">
+            <img src="bucks.jpg" usemap="#image-map" width="300px" height="150px" alt="Image with link areas">
         </li>
         <li><a href="">Пустая ссылка (href="")</a></li>
         <li><a>Ссылка без href</a></li>
@@ -357,6 +358,86 @@
         <script src="mn.js"></script>
       </div>
 </div>
+
+
+
+  <!-- Carousel in a container -->
+  <div class="container car-container">
+    <div id="carousel-basic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="carousel-basic" data-slide-to="0" class="active"></li>
+            <li data-target="carousel-basic" data-slide-to="1"></li>
+            <li data-target="carousel-basic" data-slide-to="2"></li>
+            <li data-target="carousel-basic" data-slide-to="3"></li>
+            <li data-target="carousel-basic" data-slide-to="4"></li>
+            <li data-target="carousel-basic" data-slide-to="5"></li>
+            <li data-target="carousel-basic" data-slide-to="6"></li>
+            <li data-target="carousel-basic" data-slide-to="7"></li>
+      
+        </ol>
+
+        <!-- Wrapper -->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="bucks.jpg" alt="" class="img-fluid-car">
+                <div class="carousel-caption">
+                </div>
+     
+            </div>
+            <div class="carousel-item">
+                <img src="image2.jpg" alt="" class="img-fluid-car">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image3.jpg" alt="" class="img-fluid-car">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image4.jpg" alt="" class="img-fluid-car">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image5.jpg" alt="" class="img-fluid-car">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image6.jpg" alt="" class="img-fluid-car">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image7.jpg" alt="" class="img-fluid-car">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#carousel-basic" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Назад</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-basic" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Вперед</span>
+        </a>
+    </div>
+
+    <!-- Content -->
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 <footer>
 <div class="footer text-center">
     © Курносов Антон

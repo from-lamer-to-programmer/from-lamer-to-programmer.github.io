@@ -4,3 +4,4 @@ function calculate() {
     var result = quantity * product;
     alert("Стоимость заказа: " + result + " $");
    }
+   
